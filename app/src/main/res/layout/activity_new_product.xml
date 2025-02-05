@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Campo para o nome do produto -->
+    <EditText
+        android:id="@+id/edit_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="Product Name"
+        android:inputType="text"
+        android:textSize="18sp" />
+
+    <!-- Campo para o preço do produto -->
+    <EditText
+        android:id="@+id/edit_product_price"
+        android:layout_width="match_parent"
+        android:layout_below="@id/edit_product_name"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="Product Price"
+        android:inputType="numberDecimal"
+        android:textSize="18sp" />
+
+    <!-- Botão para salvar o produto -->
+    <Button
+        android:id="@+id/button_save_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_product_price"
+        android:layout_margin="20dp"
+        android:text="Save Product" />
+
+</RelativeLayout>

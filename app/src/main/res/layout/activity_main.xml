@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- RecyclerView para exibir os produtos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_container"/>
+
+    <!-- LinearLayout para os botões lado a lado -->
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Botão para adicionar um novo produto -->
+        <Button
+            android:id="@+id/button_add_product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Adicionar Produto"
+            android:onClick="addProduct" />
+
+        <!-- Botão para listar produtos abaixo de um preço -->
+        <Button
+            android:id="@+id/button_filter_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Menos de 50€"
+            android:onClick="filterProductsBelowPrice" />
+
+    </LinearLayout>
+
+</RelativeLayout>
